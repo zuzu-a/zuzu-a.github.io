@@ -1,0 +1,193 @@
+html, body {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+    line-height: 1.15;
+    background-color: #111111;
+    font-family: NotoEmoji-Regular, 'IBM VGA', monospace;
+
+    font-size: 16px;
+    color: #ffffff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkPad{
+    padding-top: 16px;
+}
+
+b {
+    font-weight: 400;
+    text-shadow: 1px 0 0 currentColor;
+    transition: .1s color,.1s text-shadow
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    color: #ee64ae;
+    text-shadow: 0 0 .5px #ee64ae;
+    transition: .1s color, .1s text-shadow;
+    cursor: pointer;
+}
+a:hover {
+    color: #f075b7;
+    text-shadow: 0 0 2px #ee64ae;
+}
+
+#content {
+    text-align: left;
+    padding: 41px;
+    background-color: #161616;
+    position: relative;
+    overflow: hidden;
+}
+
+#content::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    
+    animation: 10s rotate linear infinite;
+    transform-origin: center;
+    top: -50%;
+    left: -50%;
+    background-image: conic-gradient(#b827fc, #2c90fc, #421ca1, #0d2b90, #d522ed, #b827fc);
+    z-index: 1;
+}
+
+#content::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    z-index: 2;
+    background: #161616;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+#name {
+    font-size: 32px;
+    color: #ffffff
+}
+
+#subtitle {
+    width: 64ch;
+    white-space: nowrap;
+    font-style: italic;
+}
+
+#divider-header {
+    margin-top: 0px;
+}
+
+#work-list {
+    margin-top: 8px;
+}
+
+#work-header {
+    margin-top: 16px;
+}
+
+#work-list {
+    margin-top: 8px;
+}
+
+#find-me-header {
+    margin-top: 16px;
+}
+
+#find-me-list {
+    margin-top: 8px;
+}
+
+#heart {
+    height: 20px;
+    margin-left: .7ch;
+    margin-right: .7ch;
+}
+
+#footer {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+#outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subheader {
+    font-size: 20px;
+    color: #ffffff
+}
+#content>* {
+  position: relative;
+  z-index: 3;
+}
+
+#discord:after {
+    display: none;
+    content: "@lion";
+    color: #634560;
+    text-decoration: none!important;
+    text-shadow: none;
+}
+#discord.copyable:after {
+    content: "@lion 📋"}
+#discord.copied:after {
+    content: "@lion ✓"}
+#discord:hover:after {
+    display: inline;
+    position: relative;
+    margin-left: 6px;
+    color: transparent;
+    background-color: #634560;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#email:after {
+    display: none;
+    content: "zuzu at this domain";
+    color: #634560;
+    text-decoration: none!important;
+    text-shadow: none;
+}
+#email:hover:after {
+    display: inline;
+    position: relative;
+    margin-left: 6px;
+    color: transparent;
+    background-color: #634560;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#email {
+    text-decoration: none!important;
+}
