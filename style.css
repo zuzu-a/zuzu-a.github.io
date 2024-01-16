@@ -89,6 +89,10 @@ a:hover {
     color: #ffffff
 }
 
+#underline {
+    text-decoration: underline  
+}
+
 #subtitle {
     width: 64ch;
     white-space: nowrap;
