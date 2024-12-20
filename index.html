@@ -8,16 +8,23 @@
         <div id="outer">
             <div>
             <div id="content" class="flex-same-size">
-                <div>
-
-                    <div id="name">
-                        λ zuzu
+                <div class="flex-container">
+                    <div id="flexbox">
+                        <img src="headshot.png" alt="Headshot" width="100vw" height="100vh">
                     </div>
+                    <div id="flexbox">
+                        <div>
+                            <div id="name">
+                                λ zuzu@xen:
+                            </div>
 
-                    <div id="subtitle">
-                        stuff? i guess, idk.
+                            <div id="subtitle">
+                                embedded systems, autonomy & control<br>
+                                purdue university, aeronautical & astronautical engineering 2025<br>
+                            </div>
+
+                        </div>
                     </div>
-
                 </div>
 
                 <div id="work">
@@ -25,25 +32,22 @@
                     </div>
 
                     <div id="work-list">
-                        <span>hey! i'm zuzu. </span><br>
+                        <span id="body">Hey! I'm Zuzu / Zuriel. I'm currently an Aeronautical & Astronautical Engineering senior at Purdue University. My current focus is on creating embedded systems in an aerospace engineering context for satellite controls and flight computers.</span><br>
 
                     </div>
 
+                    <div id="work-list">
+                        <b>links</b>: 
+                        <a href="https://github.com/zuzu-a">github</a><br>
+                        <b>contact:</b> 
+                        <a id="email"
+                        onclick="navigator.clipboard.writeText('zuzu-j@xen.energy'); this.classList.remove('copyable'); this.classList.add('copied');"
+                        onmouseover="this.classList.add('copyable'); this.classList.remove('copied')"
+                        ><span class="underline"><u>email</u></span></a>
+                        <a href="xmpp:zuzu@uwu.im">jabber</a> 
+                    </div>
 
-                            <b>links</b>: 
-                            <a href="https://soundcloud.com/ziu_ziu">soundcloud</a> 
-                            <a href="https://ziuziu.bandcamp.com">bandcamp</a> 
-                            <a href="https://last.fm/user/ziu_ziu">last.fm</a> 
-                            <a href="https://spacehey.com/zuzu">spacehey</a> <br>
-
-                            <b>contact:</b> 
-                            <a rel="me" id="email"><span id="underline">email</span></a>
-                            <a href="xmpp:zuzu@uwu.im">jabber</a> 
-                            <a id="discord"
-                            onclick="navigator.clipboard.writeText('lion'); this.classList.remove('copyable'); this.classList.add('copied');"
-                            onmouseover="this.classList.add('copyable'); this.classList.remove('copied')"
-                            ><span id="underline">discord</span></a>
-
+                    <div id="work-list">
                         <details>
                             <summary>key fingerprints</summary>
                             <dl>
@@ -53,6 +57,8 @@
                               <dd>00FF7F7B 7522EA91 D2251014 CF886834 2CE9CFF4 98E54959<br />D21C139F F279973E</dd>
                             </dl>
                           </details>
+                    </div>
+                    
         </div>
     </body>
 </html>
