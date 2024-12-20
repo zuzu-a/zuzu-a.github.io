@@ -17,6 +17,10 @@ html, body {
     align-items: center;
 }
 
+img {
+    display: block;
+}
+
 .linkPad{
     padding-top: 16px;
 }
@@ -25,6 +29,16 @@ b {
     font-weight: 400;
     text-shadow: 1px 0 0 currentColor;
     transition: .1s color,.1s text-shadow
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
 }
 
 ul {
@@ -44,7 +58,7 @@ a:hover {
 
 #content {
     text-align: left;
-    padding: 41px;
+    padding: 10vw;
     background-color: #161616;
     position: relative;
     overflow: hidden;
@@ -89,14 +103,14 @@ a:hover {
     color: #ffffff
 }
 
-#underline {
-    text-decoration: underline  
-}
-
 #subtitle {
     width: 64ch;
     white-space: nowrap;
     font-style: italic;
+}
+
+span#wolf {
+    text-align: justify;
 }
 
 #divider-header {
@@ -142,8 +156,9 @@ a:hover {
 
 #outer {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: center;
+    width: 60vw;
 }
 
 .subheader {
@@ -155,34 +170,17 @@ a:hover {
   z-index: 3;
 }
 
-#discord:after {
-    display: none;
-    content: "@lion";
-    color: #634560;
-    text-decoration: none!important;
-    text-shadow: none;
-}
-#discord.copyable:after {
-    content: "@lion 📋"}
-#discord.copied:after {
-    content: "@lion ✓"}
-#discord:hover:after {
-    display: inline;
-    position: relative;
-    margin-left: 6px;
-    color: transparent;
-    background-color: #634560;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
 #email:after {
     display: none;
-    content: "zuzu at this domain";
+    content: "zuzu-j@xen.energy";
     color: #634560;
     text-decoration: none!important;
     text-shadow: none;
 }
+#email.copyable:after {
+    content: "zuzu-j@xen.energy 📋"}
+#email.copied:after {
+    content: "zuzu-j@xen.energy ✓"}
 #email:hover:after {
     display: inline;
     position: relative;
@@ -191,7 +189,4 @@ a:hover {
     background-color: #634560;
     background-clip: text;
     -webkit-background-clip: text;
-}
-#email {
-    text-decoration: none!important;
 }
